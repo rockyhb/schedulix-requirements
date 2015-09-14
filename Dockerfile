@@ -1,6 +1,6 @@
-FROM centos:7
+FROM centos:6
 MAINTAINER Claas Rockmann-Buchterkirche <claas@rockbu.de>
-RUN rpm -Uvh "https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
+RUN rpm -Uvh "https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm"
 RUN yum clean all
 RUN yum -y update
 RUN yum -y install java-1.7.0-openjdk-devel gcc gcc-c++ make jna wget git unzip
